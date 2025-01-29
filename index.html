@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Sochima Ifedikwa</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - <span>Sochima Ifedikwa</span></title>
     <meta name="description" content=" WDD 131 - Dynamic Web Fundamentals | Sochima Ifedikwa | This is a website to show my homepage">
     <meta name="author" content="Sochima Ifedikwa">
     <link rel="stylesheet" href="styles/base.css">
@@ -13,30 +13,57 @@
     <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>WDD 131: Dynamic Web Fundamentals - Sochima Ifedikwa</h1>
-        <nav>
+    <header class="header">
+        <h1 class="heading">WDD 131: Dynamic Web Fundamentals -<span> Sochima Ifedikwa </span></h1>
+        <nav class="nav">
             <ul>
                 <li><a href="https://www.linkedin.com/in/sochima-ifedikwa/">LinkedIn</a></li>
                 <li><a href="https://byupw.instructure.com/.">Canvas</a></li>
                 <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/philip/4?lang=eng&id=p13#p13">Scripture</a></li>
                 <li><a href="https://github.com/sochima-ifedikwa">Final Project</a></li>
             </ul>
-            
-            
-            
-            
-            
-            
         </nav>
     </header>
-    <main>
-        <section class="About-me card"></section>
-        <section class="Web-Dev card"></section>
+    <main class="container">
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="content">
+                <div class="about">
+                    <div class="about-me">
+                        <p>My name is Sochima Ifedikwa but my friends call me Sochi. I was born in Nigeria but I currently live in Texas, United States. I am a current student at Brigham Young University Idaho studying Software engineering. My major focuses on Web and Software Developmen. Duringmy free time, I love to work out and Play soccer. I also love to play video games as well. </p>
+                        <img src="images/profile.webp" alt=" A picture of Sochima Ifedikwa">
+                    </div>
+                    
+                    <div class="about-country">
+                        <h3>Abia, Nigeria</h3>
+                        <div class="country-details">
+                            <figure>
+                                <img src="images/nigerian_flag.jpg" alt="Nigeria Flag">
+                                <figcaption>Official Flag of Nigeria</figcaption>
+                            </figure>
+                            <p>Nigeria is one of the 6th most populated countries in the world and the most poultaed in Africa. NNigeria is a vibrant and diverse country located in West Africa, known for its rich culture, vast population, and economic influence. It is the most populous country in Africa, with over 220 million people, and is home to more than 250 ethnic groups and 500 languages. The three largest ethnic groups are the Hausa-Fulani, Yoruba, and Igbo.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </section>
+        <section class="Web-Dev card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+                <li><a href="https://www.freecodecamp.org/">Free Code Camp</a></li>
+                <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                <li><a href="https://www.codecademy.com/">Codecademy</a></li>
+                <li><a href="https://www.khanacademy.org/computing/computer-programming">Khan Academy</a></li>
+            </ul>
+        </section>
     </main>
     <footer>
-        <p>&copy; <span id="currentyear"></span> Sochima Ifedikwa | Texas </p>
-        <p id="lastModified"></p>
+        <p>&copy;<span id="currentYear"></span> Sochima Ifedikwa | Nigeria </p>
+        <p id="lastModified">Last Modification: 01/25/2025 </p>
     </footer>
 </body>
 </html>

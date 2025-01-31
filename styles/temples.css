@@ -1,0 +1,137 @@
+:root {
+    --primary-font-family: "Roboto", serif;
+    --primary-dark-background: #24486c;
+    --primary-light-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font-family);
+}
+
+body {
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+    height: 100vh;
+}
+
+header, footer {
+    grid-column: 1/4;
+    padding: 1.2rem;
+    background-color: var(--primary-dark-background);
+    color: var(--primary-light-color);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.2rem;
+}
+
+footer {
+    text-align: center;
+}
+
+#selectedMenu {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#lastModified {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: yellow;
+}
+
+.heading {
+    font-size: 1.2rem;
+}
+
+main {
+    grid-column: 1/4;
+    padding: 1.5rem;
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+li a {
+    color: var(--primary-light-color);
+    text-decoration: none;
+    padding: 0.3rem;
+    border-radius: 10px;
+}
+
+li a:hover {
+    background-color: var(--primary-light-color);
+    color: var(--primary-dark-background);
+    transition: all 0.3s ease-in-out;
+}
+
+/* mobile view design */
+#menu {
+    border: none;
+    background-color: transparent;
+    color: var(--primary-light-color);
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.show::before {
+    content: "❌";
+}
+
+nav.show {
+    position: absolute;
+    top: 50px;
+    left: 0rem;
+    background-color: var(--primary-dark-background);
+    width: 100%;
+    padding: 2rem;
+}
+
+nav ul {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+nav ul.show {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.figure-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+figure img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+}

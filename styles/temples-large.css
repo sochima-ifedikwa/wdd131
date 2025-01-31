@@ -10,7 +10,7 @@
         gap: 3rem;
     }
 
-    .temple-figures {
+    .figure-container{
         grid-template-columns: repeat(2, 1fr);
         gap: 1.2rem;
         align-items: center;
@@ -30,7 +30,7 @@
         gap: 3rem;
     }
 
-    .temple-figures {
+    .figure-container{
         grid-template-columns: repeat(3, 1fr);
         gap: 1.2rem;
         align-items: center;

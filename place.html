@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visting Germany</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="heading">Germany</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/germany-large.webp">
+                <source media="(min-width: 500px)" srcset="images/germany-med.webp">
+                <img src="images/germany.webp" alt="hero-image">
+            </picture>
+        </div>
+        <div class="content">
+            <section class="data">
+                <h2>Data</h2>
+                <ul>
+                    <li><span>Area: </span>357,022 sq km</li>
+                    <li><span>Population: </span>83,132,799 (approx.)</li>
+                    <li><span>Capital: </span>Berlin</li>
+                    <li><span>Languages: </span>German</li>
+                    <li><span>Currency: </span>Euro (EUR)</li>
+                    <li><span>Time Zone: </span>UTC+1 (CET), UTC+2 (CEST in summer)</li>
+                    <li><span>Calling Code: </span>+49</li>
+                    <li><span>Internet TLD: </span>.de</li>
+                </ul>
+            </section>
+            <section class="weather">
+                <h2>Weather</h2>
+                <div>
+                    <img src="images/weather-icon.svg" alt=" weather-icon">
+                </div>
+                <ul>
+                    <li><span>Temperature: </span>25°C</li>
+                    <li><span>Conditions: </span>Mostly sunny</li>
+                    <li><span>Wind: </span>16km/h</li>
+                    <li id="wind-chill"></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> | Sochima Ifedikwa | Texas</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

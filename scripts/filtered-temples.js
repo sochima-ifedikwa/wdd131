@@ -79,7 +79,7 @@ const temples = [
         dedicated: "1989, March, 5",
         area: 44207,
         imageUrl:
-        "https://churchofjesuschristtemples.org/assets/img/temples/dallas-texas-temple/dallas-texas-temple-55240-main.jpg",
+        "https://churchofjesuschristtemples.org/assets/img/temples/dallas-texas-temple/dallas-texas-temple-55221.jpg",
     },
 
 ]; 

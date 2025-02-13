@@ -71,7 +71,7 @@ const temples = [
         dedicated: "2002, April, 21",
         area: 16598,
         imageUrl:
-        "https://churchofjesuschristtemples.org/assets/img/temples/lubbock-texas-temple/lubbock-texas-temple-13996-main.jpg",
+        "https://churchofjesuschristtemples.org/assets/img/temples/lubbock-texas-temple/lubbock-texas-temple-5219-thumb.jpg",
     },
     {
         templeName: "Dallas Texas",
@@ -79,7 +79,7 @@ const temples = [
         dedicated: "1989, March, 5",
         area: 44207,
         imageUrl:
-        "https://churchofjesuschristtemples.org/assets/img/temples/dallas-texas-temple/dallas-texas-temple-55221.jpg",
+        "https://churchofjesuschristtemples.org/assets/img/temples/dallas-texas-temple/dallas-texas-temple-51576-thumb.jpg",
     },
 
 ]; 

@@ -1,0 +1,63 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <meta name="description" content="This the siteplan for the beginner workout tips website">
+    <meta name="author" content="Sochima Ifedikwa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css"> <!-- Link to CSS for color and typography -->
+    <script src="../scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="workouts.html">Workout Plans</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Get in Touch</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+
+                <label for="fitness-goals">Fitness Goals:</label>
+                <select id="fitness-goals" name="fitness-goals" required>
+                    <option value="">Select...</option>
+                    <option value="weight-loss">Weight Loss</option>
+                    <option value="muscle-gain">Muscle Gain</option>
+                    <option value="general-fitness">General Fitness</option>
+                </select>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+            <p id="form-message"></p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy;<span id="currentYear"></span> Sochima Ifedikwa | Nigeria </p>
+        <p id="lastModified">Last Modification: 01/25/2025 </p>
+    </footer>
+</body>
+</html>

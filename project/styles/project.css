@@ -58,10 +58,33 @@ button:hover {
     background-color: #218838;
 }
 
-.workout-img {
+/* .workout-img {
     width: 100px;
     height: auto;
     margin-left: 10px;
+    border-radius: 8px;
+} */
+
+
+.workout-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.workout-img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
     border-radius: 8px;
 }
 
@@ -122,6 +145,13 @@ input:focus, textarea:focus, select:focus {
     #get-tip {
         padding: 5px 10px;
     }
+
+    .workout-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 480px) {
@@ -167,4 +197,12 @@ input:focus, textarea:focus, select:focus {
     #get-tip {
         padding: 2px 5px;
     }
+
+    .workout-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
 }

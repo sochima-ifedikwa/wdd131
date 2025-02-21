@@ -56,6 +56,6 @@ function createDynamicMessage(goal, name) {
   return `Hello, ${name}! To achieve your goal of ${goal}, remember to stay consistent and patient. Good luck!`;
 }
 
-// Example usage of createDynamicMessage function
+
 const dynamicMessage = createDynamicMessage(getGoal(), 'John Doe');
 console.log(dynamicMessage);

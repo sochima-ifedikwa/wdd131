@@ -1,9 +1,13 @@
 
 /* Global Styles */
+
 body {
+    display: flex;
+    flex-direction: column;
     font-family: 'Open Sans', sans-serif;
     background-color: #f8f9fa;
     color: #333;
+    height: 100vh;
     margin: 0;
     padding: 0;
 }
@@ -66,6 +70,7 @@ footer {
     padding: 1rem;
     background-color: #28a745;
     color: white;
+    margin-top: auto;
 }
 
 /* Contact Form Styles */
@@ -92,13 +97,74 @@ input:focus, textarea:focus, select:focus {
     outline: none;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
+    main {
+        padding: 1em;
     }
 
-    .workout-img {
-        width: 80px;
+    #welcome {
+        padding: 1em;
+    }
+
+    #goal-form {
+        margin-top: 10px;
+    }
+
+    #goal-select {
+        height: 30px;
+        padding: 5px;
+    }
+
+    #tip {
+        margin-top: 10px;
+    }
+
+    #get-tip {
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.5em;
+    }
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding: 0.5em;
+    }
+
+    #welcome {
+        padding: 0.5em;
+    }
+
+    #goal-form {
+        margin-top: 5px;
+    }
+
+    #goal-select {
+        height: 20px;
+        padding: 2px;
+    }
+
+    #tip {
+        margin-top: 5px;
+    }
+
+    #get-tip {
+        padding: 2px 5px;
     }
 }

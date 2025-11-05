@@ -3,9 +3,6 @@ const button = document.querySelector('button');
 const list = document.querySelector('#list')
 
 
-
-
-
 //create a click event lister for the add Chapter button
 button.addEventListener('click', function() {
 
@@ -32,3 +29,9 @@ button.addEventListener('click', function() {
     input.focus();
 });
 
+/*
+const li  = document.createElement('li');
+const deleteButton  = document.createElement('button');
+
+li.textContent = input.value;
+*/
